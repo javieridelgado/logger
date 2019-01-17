@@ -24,6 +24,11 @@ app.post('/', function(req, res) {
   console.log(req.body);
 });
 
+app.put('/', function(req, res) {
+  res.send('Logged');
+  console.log(req.body);
+});
+
 app.listen(3001, function() {
   console.log('Example app listening on port 3001!');
 });
